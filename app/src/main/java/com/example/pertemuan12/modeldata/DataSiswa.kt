@@ -23,3 +23,10 @@ data class DetailSiswa(
 )
 
 // Fungsi ini WAJIB ada agar EntryViewModel tidak error
+fun DetailSiswa.toDataSiswa(): DataSiswa = DataSiswa(
+    id = id, nama = nama, alamat = alamat, telpon = telpon
+)
+
+fun DataSiswa.toDetailSiswa(): DetailSiswa = DetailSiswa(
+    id = id, nama = nama, alamat = alamat, telpon = telpon
+)
