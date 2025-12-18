@@ -36,22 +36,3 @@ fun HomeScreen(
                 Icon(Icons.Default.Add, contentDescription = "Add")
             }
         }
-    ) { innerPadding ->
-        HomeStatus(
-            homeUiState = viewModel.siswaUIState,
-            retryAction = { viewModel.getSiswa() },
-            onDetailClick = onDetailClick,
-            modifier = Modifier.padding(innerPadding)
-        )
-    }
-}
-
-@Composable
-fun HomeStatus(
-    homeUiState: UIStateHome,
-    retryAction: () -> Unit,
-    onDetailClick: (Int) -> Unit,
-    modifier: Modifier
-) {
-    TODO("Not yet implemented")
-}
