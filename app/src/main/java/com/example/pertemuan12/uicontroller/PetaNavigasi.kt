@@ -36,5 +36,13 @@ fun PetaNavigasi(
             )
         }
 
-
+        // Rute untuk Halaman Tambah Data (Entry)
+        composable(DestinasiEntry.route) {
+            EntrySiswaScreen(
+                navigateBack = {
+                    navController.popBackStack()
+                }
+            )
+        }
+    }
 }
